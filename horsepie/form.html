@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Columns 3 Central!</title>
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header> 
+            <h1>Forms!</h1>
+        </header>
+
+        <main>
+
+            <!-- <form>
+                <label for="fname">YOUR NAME:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">YOUR OTHER NAME:</label><br>
+                <input type="text" id="lname" name="lname">
+                <input type="submit" value="SUBMIT :DDDD"
+              </form>  -->
+
+            <form action="show-action.php" method="POST">
+
+                <p>
+                    <label for="sludgehandle">Enter sludgehandle: <br><small>(sludgehandles are limited to 2 characters):</small></label>
+                    <br>
+                    <input type="text" name="sludgehandle" size="4" maxlength="2">
+                </p>
+
+                <p>
+                    <label for="sludepass">Enter sludgepass: <br><small>(sludgepasses are limited to 2 characters):</small></label>
+                    <br>
+                    <input type="password" name="sludgepass" size="4" maxlength="2">
+                </p>
+
+
+                <p>Please select your favourite consumable matter entity:
+                    <br>
+                    <input type="radio" name="matter entity" value="nibblers"> Nibblers
+                    <br>
+                    <input type="radio" name="matter entity" value="protein"> Protein 5b
+                    <br>
+                    <input type="radio" name="matter entity" value="bugmix"> Bug mix
+                    <br>
+                    <input type="radio" name="matter entity" value="sludge"> The sludge
+                </p>
+
+
+                <p>Please select the sector(s) you have visited today:
+                    <br>
+                    <input type="checkbox" name="sector" value="dungdistrict"> Dung District
+                    <br>
+                    <input type="checkbox" name="sector" value="homepod"> Home Pod
+                    <br>
+                    <input type="checkbox" name="sector" value="peatfields"> Peat Fields
+                    <br>
+                    <input type="checkbox" name="sector" value="heatcube"> The *Heatcube*
+                </p>
+
+                <p>Please select your auditory pleasure device:
+                    <br>
+
+                    <select name="device">
+                        <option value="larynximplant">Larynx implant</option>
+                        <option value="earcream">Ear cream</option>
+                        <option value="personalscreecher">Personal screecher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit"/>
+                </p>
+
+              </form>
+
+        </main>
+
+    </body>
+
+    <footer>
+        <h1>
+            <a href="index.html">Return to the homepage!</a>
+        </h1>
+    </footer>
+
+</html>

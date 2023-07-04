@@ -1,0 +1,46 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "log hea hea hea"
+      "lin con con con"
+      "lin con con con"
+      "lin foo foo foo";
+  }
+  
+  .lin { grid-area: lin; }
+  
+  .foo { grid-area: foo; }
+  
+  .con { grid-area: con; }
+  
+  .log { grid-area: log; }
+  
+  .hea { grid-area: hea; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }

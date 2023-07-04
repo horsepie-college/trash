@@ -1,0 +1,73 @@
+@font-face {
+  font-family: ohrrpgce;
+  src: url(assets/ohrrpgcev5.ttf);
+}
+
+body {
+  background-color: black;
+  color: white;
+
+
+  font-family: ohrrpgce;
+  font-size: 36px;
+  font-weight: normal;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+
+  background: url('assets/backstar.gif');
+  image-rendering: pixelated;
+
+  cursor: url('assets/cursor.png'), auto;
+
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.25fr;
+    gap: 48px 48px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "log hea hea hea"
+      "lin con con con"
+      "lin con con con"
+      "lin foo foo foo";
+  }
+  
+  .lin { grid-area: lin; }
+  
+  .foo { grid-area: foo; }
+  
+  .con { grid-area: con; }
+  
+  .log { grid-area: log; }
+  
+  .hea { grid-area: hea; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container div {
+    background-color: #000000;
+    position: relative;
+    overflow: scroll;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: normal;
+  }

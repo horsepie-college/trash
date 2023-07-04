@@ -1,0 +1,40 @@
+@font-face {
+    font-family: ohrrpgce;
+    src: url(assets/ohrrpgcev5.ttf);
+}
+ 
+body {
+    background-color: black;
+    color: white;
+
+
+    font-family: ohrrpgce;
+    font-size: 36px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+
+    background: url('assets/backstar.gif');
+    image-rendering: pixelated;
+}
+
+
+p {
+  width: 200px;
+  border-style: solid;
+}
+
+p.one {
+  border-width: 2px;
+  border-color: red;
+}
+
+p.two {
+  border-width: thick;
+  border-color: green;
+  border-style: dashed;
+}
+
+p.three {
+  border-width: 1px 2px 4px 8px;
+  border-color: blue red green orange;
+}
